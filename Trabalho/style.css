@@ -1,0 +1,16 @@
+.texto{
+    color: white;
+}
+.rodape {
+    background-color: rgb(0, 0, 0);
+    padding: 50px;
+    color: white;
+    text-align: center;
+}
+.logo {
+    position: fixed;
+    bottom: 350px;
+    right: 650px; 
+}
+
+
