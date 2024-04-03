@@ -10,7 +10,6 @@
 .logo{
     flex: 1;
     text-align: left;
-
 }
 #titulo{
     flex: 1;
@@ -27,16 +26,30 @@ a{
     color: white;
 }
 .sobre{
-    
     flex: 1;
     margin: 28px;
     text-align: right;
     font-size: 20px;
     font-family: Arial, Helvetica, sans-serif;
-      
-
+    
 }
-
-
+.texto{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    position:relative ;
+    top: 85px;
+    margin-left: 30px;
+}
+.projetos{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    position:relative ;
+    top: 150px;
+    margin-left: 30px;
+}
+.container2{
+    position: relative;
+    background-color: black;
+    height: 320px;
+    top: 170px;
+}
 
 
