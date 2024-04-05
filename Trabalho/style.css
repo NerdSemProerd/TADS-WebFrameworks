@@ -13,18 +13,39 @@
     flex: 1;
     text-align: left;
 }
+@keyframes RGB {
+    0%   { color: rgb(255, 0, 0); transform: rotate(0deg);} /* Vermelho */
+    25%  { color: rgb(0, 0, 255);} /* Azul */
+    50%  { color: rgb(0, 255, 0); transform: rotate();} /* Verde */
+    75%  { color: rgb(255, 255, 0); } /* Amarelo */
+    100% { color: rgb(255, 0, 0); transform: rotate(360deg);} /* Vermelho */
+}
 #titulo{
     flex: 1;
-    color: rgb(253, 253, 253);
+    color: white;
     font-family: Arial, Helvetica, sans-serif;
     max-height: 100px;
     margin: 20px;
+}
+#titulo:hover{
+    animation: RGB 1ms infinite;
 }
 a{
     margin: 5px;
     text-decoration: none;
     color: white;
+    transition: color 0.5s ease;
 }
+#sobre:hover{
+    color: red;
+}
+#projetos:hover{
+    color: rgb(245, 209, 52);
+}
+#contato:hover{
+    color: rgb(152, 21, 179);
+}
+
 .contato{
     flex: 1;
     margin: 28px;
@@ -56,13 +77,14 @@ a{
 }
 .blocos{
     background-color: rgba(0, 0, 0, 0.089);
-    height: 315px;
-    width: 572px;
+    height: 400px;
+    width: 600px;
     margin-right: 10px;
 }
 .lb{
     text-align: center;
-    margin-top: 110px;
+    margin-top: 190px;
+    align-items: center;
 }
 .botao{
     text-align: center;
@@ -75,15 +97,7 @@ a{
     width: 220px;
     
 }
-.box-1{
-    margin-top: 5px;
-}
-.box-2{
-    margin-top: 5px;
-}
-.box-3{
-    margin-top: 5px;
-}
+
 
 
 
