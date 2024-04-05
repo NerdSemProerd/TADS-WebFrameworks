@@ -32,12 +32,62 @@ a{
     font-size: 20px;
     font-family: Arial, Helvetica, sans-serif;
 }
+
+
+
+
 .texto{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    position:relative ;
-    top: 25px;
     margin-left: 10px;
 }
+.projetos{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    position:relative ;
+    margin-top: 90px;
+    margin-left: 10px;
+}
+
+
+
+
+.caixas{
+    margin-top: 12px;
+    display: flex;
+}
+.blocos{
+    background-color: rgba(255, 250, 201, 0.747);
+    height: 315px;
+    width: 572px;
+    margin-right: 10px;
+}
+.lb{
+    text-align: center;
+    margin-top: 110px;
+}
+.botao{
+    text-align: center;
+    height: 40px;
+}
+.centro{
+    text-align: center;
+}
+.box-img{
+    width: 220px;
+    
+}
+.box-1{
+    margin-top: 5px;
+}
+.box-2{
+    margin-top: 5px;
+}
+.box-3{
+    margin-top: 5px;
+}
+
+
+
+
 footer{
     position:absolute;
     background-color: rgb(49, 49, 49);
@@ -51,24 +101,4 @@ footer{
 .sobre{
    font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: white;  
-}
-.projetos{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    position:relative ;
-    margin-top: 90px;
-    margin-left: 10px;
-}
-.caixa{
-    margin-top: 12px;
-    display: flex;
-}
-.blocos{
-
-    background-color: rgba(255, 250, 201, 0.747);
-    height: 315px;
-    width: 572px;
-    margin-right: 10px;
-}
-.box_text{
-    text-align: center;
 }
