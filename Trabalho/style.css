@@ -38,13 +38,7 @@ a{
     top: 25px;
     margin-left: 10px;
 }
-.projetos{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    position:relative ;
-    top: 50px;
-    margin-left: 10px;
-}
-.container2{
+footer{
     position:absolute;
     background-color: rgb(49, 49, 49);
     height: 50px;
@@ -56,5 +50,25 @@ a{
 }
 .sobre{
    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: white;   
+    color: white;  
+}
+.projetos{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    position:relative ;
+    margin-top: 90px;
+    margin-left: 10px;
+}
+.caixa{
+    margin-top: 12px;
+    display: flex;
+}
+.blocos{
+
+    background-color: rgba(255, 250, 201, 0.747);
+    height: 315px;
+    width: 572px;
+    margin-right: 10px;
+}
+.box_text{
+    text-align: center;
 }
