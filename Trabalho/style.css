@@ -72,21 +72,25 @@ a{
 .caixas{
     margin-top: 12px;
     display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 .blocos{
     background-color: rgba(0, 0, 0, 0.089);
     height: 260px;
-    width: 600px;
+    width: 400px;
     margin-right: 10px;
+
 }
 .lb{
-    text-align: center;
-    margin-top: 60px;
-    align-items: center;
+
+    
 }
 .botao{
-    text-align: center;
-    height: 40px;
+
+    position: absolute;
+    bottom: 0px;
+    height: 15%;
 }
 .centro{
     text-align: center;
@@ -95,6 +99,17 @@ a{
     width: 220px;
     
 }
+
+
+
+
+
+
+
+
+
+
+
 
 
 
