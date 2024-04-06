@@ -64,11 +64,9 @@ a{
 .projetos{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     position:relative ;
-    margin-top: 90px;
+    margin-top: 20px;
     margin-left: 10px;
 }
-
-
 
 
 .caixas{
@@ -77,13 +75,13 @@ a{
 }
 .blocos{
     background-color: rgba(0, 0, 0, 0.089);
-    height: 400px;
+    height: 260px;
     width: 600px;
     margin-right: 10px;
 }
 .lb{
     text-align: center;
-    margin-top: 190px;
+    margin-top: 60px;
     align-items: center;
 }
 .botao{
