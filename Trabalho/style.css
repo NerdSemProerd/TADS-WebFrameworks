@@ -80,10 +80,11 @@ a{
     height: 260px;
     width: 400px;
     margin-right: 10px;
+    border-radius: 5px;
 
 }
 .lb{
-    margin-left: 140px;
+    margin-left: 160px;
     
 }
 .botao{
@@ -91,6 +92,16 @@ a{
     position: absolute;
     bottom: 0px;
     height: 15%;
+    border-radius: 8px;
+    text-decoration: none;
+    transition-duration: 0.4s;
+    border-color: rgb(240, 240, 240);
+    
+}
+.botao:hover{
+    background-color: rgb(0, 0, 0);
+    color: white;
+    
 }
 .centro{
     text-align: center;
@@ -99,22 +110,6 @@ a{
     width: 220px;
     
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 footer{
     position:absolute;
     background-color: rgb(49, 49, 49);
