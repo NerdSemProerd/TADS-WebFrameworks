@@ -45,7 +45,6 @@ a{
 #contato:hover{
     color: rgb(152, 21, 179);
 }
-
 .contato{
     flex: 1;
     margin: 28px;
@@ -53,10 +52,6 @@ a{
     font-size: 20px;
     font-family: Arial, Helvetica, sans-serif;
 }
-
-
-
-
 .texto{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin-left: 10px;
@@ -107,8 +102,7 @@ a{
     text-align: center;
 }
 .box-img{
-    width: 220px;
-    
+    width: 220px;    
 }
 footer{
     position:absolute;
