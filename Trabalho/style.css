@@ -62,8 +62,6 @@ a{
     margin-top: 20px;
     margin-left: 10px;
 }
-
-
 .caixas{
     margin-top: 12px;
     display: flex;
@@ -76,27 +74,25 @@ a{
     width: 400px;
     margin-right: 10px;
     border-radius: 5px;
-
+}
+.box-2{
+    margin-left: 3px;
 }
 .lb{
     margin-left: 160px;
-    
 }
 .botao{
-
     position: absolute;
     bottom: 0px;
     height: 15%;
     border-radius: 8px;
     text-decoration: none;
     transition-duration: 0.4s;
-    border-color: rgb(240, 240, 240);
-    
+    border-color: rgb(240, 240, 240);   
 }
 .botao:hover{
     background-color: rgb(0, 0, 0);
-    color: white;
-    
+    color: white;    
 }
 .centro{
     text-align: center;
