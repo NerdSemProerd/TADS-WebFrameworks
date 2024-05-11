@@ -1,145 +1,48 @@
-.titulo{
+body {
+    background-color: rgb(58, 58, 58);
     font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
     color: white;
-}
-.redape{
-    text-align: center;
-}
-.theme_select{
-    margin: 10px;
-    margin-top: 15px;   
-}
-body{
-     background-color: rgb(58, 58, 58); 
-}
-#resultado{
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
-    color: white;
-}
-/* The switch - the box around the slider */
-.switch {
-    /* Variables */
-   --switch_width: 2em;
-   --switch_height: 1em;
-   --thumb_color: #e8e8e8;
-   --track_color: #e8e8e8;
-   --track_active_color: #888;
-   --outline_color: #000;
-   font-size: 17px;
-   position: relative;
-   display: inline-block;
-   width: var(--switch_width);
-   height: var(--switch_height);
-  }
-  
-  /* Hide default HTML checkbox */
-  .switch input {
-   opacity: 0;
-   width: 0;
-   height: 0;
-  }
-  
-  /* The slider */
-  .slider {
-   box-sizing: border-box;
-   border: 2px solid var(--outline_color);
-   position: absolute;
-   cursor: pointer;
-   top: 0;
-   left: 0;
-   right: 0;
-   bottom: 0;
-   background-color: var(--track_color);
-   transition: .15s;
-   border-radius: var(--switch_height);
-  }
-  
-  .slider:before {
-   box-sizing: border-box;
-   position: absolute;
-   content: "";
-   height: var(--switch_height);
-   width: var(--switch_height);
-   border: 2px solid var(--outline_color);
-   border-radius: 100%;
-   left: -2px;
-   bottom: -2px;
-   background-color: var(--thumb_color);
-   transform: translateY(-0.2em);
-   box-shadow: 0 0.2em 0 var(--outline_color);
-   transition: .15s;
-  }
-  
-  input:checked + .slider {
-   background-color: var(--track_active_color);
-  }
-  
-  input:focus-visible + .slider {
-   box-shadow: 0 0 0 2px var(--track_active_color);
-  }
-  
-  /* Raise thumb when hovered */
-  input:hover + .slider:before {
-   transform: translateY(-0.3em);
-   box-shadow: 0 0.3em 0 var(--outline_color);
-  }
-  
-  input:checked + .slider:before {
-   transform: translateX(calc(var(--switch_width) - var(--switch_height))) translateY(-0.2em);
-  }
-  
-  /* Raise thumb when hovered & checked */
-  input:hover:checked + .slider:before {
-   transform: translateX(calc(var(--switch_width) - var(--switch_height))) translateY(-0.3em);
-   box-shadow: 0 0.3em 0 var(--outline_color);
-  }
-  button {
-    appearance: none;
-    background-color: rgb(131, 131, 131);
-    border: 0.125em solid #1A1A1A;
-    border-radius: 0.9375em;
-    box-sizing: border-box;
-    color: #000000;
-    cursor: pointer;
-    display: inline-block;
-    font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-    font-size: 16px;
-    font-weight: 600;
-    line-height: normal;
     margin: 0;
-    min-height: 3.75em;
-    min-width: 0;
-    outline: none;
-    padding: 1em 2.3em;
-    text-align: center;
-    text-decoration: none;
-    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
-    user-select: none;
-    -webkit-user-select: none;
-    touch-action: manipulation;
-    will-change: transform;
-   }
-   
-   button:disabled {
-    pointer-events: none;
-   }
-   
-   button:hover {
-    color: #fff;
-    background-color: #1A1A1A;
-    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
-    transform: translateY(-2px);
-   }
-   
-   button:active {
-    box-shadow: none;
-    transform: translateY(0);
-   }
-   .but{
+    padding: 0;
     display: flex;
-    height: 100%;
-    width: 100%;
-    align-items: center;
-   }
+    justify-content: space-between;
+    align-items: flex-start;
+    min-height: 100vh;
+    padding-top: 50px; /* Espaço para cima */
+    padding-bottom: 50px; /* Espaço para baixo */
+}
+
+.container {
+    text-align: center;
+    width: 45%; /* Largura do container */
+}
+
+.titulo {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.contador {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.botao {
+    padding: 10px 20px;
+    font-size: 18px;
+    color: rgb(58, 58, 58);
+    background-color: #e8e8e8;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-bottom: 10px; /* Espaço entre botões */
+}
+
+.botao:hover {
+    background-color: #ccc;
+}
+
+.botao.truco-ativo {
+    background-color: red;
+}

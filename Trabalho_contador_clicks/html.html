@@ -3,23 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contador_de_clicks</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Contador de Pontos - Truco</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-    <header>
-        <div class="theme_select">
-            <label class="switch">
-                <input type="checkbox">
-                <span class="slider"></span>
-            </label>
-        </div>
-        
-    </header>
-    <div class="titulo"><h1>Contador de clicks</h1></div>
-    <div id="resultado"><h3>Numero de clicks: 01</h3></div>
-    <div class="but"><button>Clique para contar</button></div>
-    
-      
+    <div class="container">
+        <div class="titulo">Equipe 1</div>
+        <button class="botao" id="equipe1Mais" onclick="adicionarPonto(1)">+</button>
+        <button class="botao" id="equipe1Menos" onclick="removerPonto(1)">-</button>
+        <div class="contador" id="pontosEquipe1">0</div>
+    </div>
+
+    <div class="container">
+        <div class="titulo">Equipe 2</div>
+        <button class="botao" id="equipe2Mais" onclick="adicionarPonto(2)">+</button>
+        <button class="botao" id="equipe2Menos" onclick="removerPonto(2)">-</button>
+        <div class="contador" id="pontosEquipe2">0</div>
+    </div>
+
+    <div class="container">
+        <button class="botao" id="truco" onclick="usarTruco()">TRUCO!!!</button>
+    </div>
+    <script src="trabalho.js"></script>
 </body>
 </html>
