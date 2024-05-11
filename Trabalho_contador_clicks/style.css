@@ -8,13 +8,13 @@ body {
     justify-content: space-between;
     align-items: flex-start;
     min-height: 100vh;
-    padding-top: 50px; /* Espaço para cima */
-    padding-bottom: 50px; /* Espaço para baixo */
+    padding-top: 50px; 
+    padding-bottom: 50px; 
 }
 
 .container {
     text-align: center;
-    width: 45%; /* Largura do container */
+    width: 45%; 
 }
 
 .titulo {
@@ -36,7 +36,7 @@ body {
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    margin-bottom: 10px; /* Espaço entre botões */
+    margin-bottom: 10px; 
 }
 
 .botao:hover {
