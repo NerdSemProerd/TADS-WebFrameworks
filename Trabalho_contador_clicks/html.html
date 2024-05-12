@@ -5,25 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contador de Pontos - Truco</title>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="trabalho.js"></script>
+    <!-- Eu poderia ter feito algo mais simples, mas eu fiquei com vontade de fazer algo mais "avançado"....e eu me diverti fazendo
+          isso é oq importa :) -->
 </head>
 <body>
-    <div class="container">
-        <div class="titulo">Nós</div>
-        <button class="botao" id="equipe1Mais" onclick="adicionarPonto1()">+</button>
-        <button class="botao" id="equipe1Menos" onclick="removerPonto1()">-</button>
-        <div class="contador" id="pontosEquipe1">0</div>
+    <header>
+        <h1 class="titulo">Contador de pontos</h1>
+        <button class="botaor" onclick="reiniciar()">Reiniciar</button>
+    </header>
+    <div class="painel">
+        <div class="container">
+            <div class="equipes">Equipe 1</div>
+            <button class="botao" id="equipe1Mais" onclick="adicionarPonto1()">+</button>
+            <button class="botao" id="equipe1Menos" onclick="removerPonto1()">-</button>
+            <div class="contador" id="pontosEquipe1">0</div>
+        </div>
+        <div class="container">
+            <div class="equipes">Equipe 2</div>
+            <button class="botao" id="equipe2Mais" onclick="adicionarPonto2()">+</button>
+            <button class="botao" id="equipe2Menos" onclick="removerPonto2()">-</button>
+            <div class="contador" id="pontosEquipe2">0</div>
+        </div>
+        <div class="container">
+            <button class="botao" id="truco" onclick="usarTruco()">TRUCO!!!</button>
+        </div>
     </div>
-
-    <div class="container">
-        <div class="titulo">Eles</div>
-        <button class="botao" id="equipe2Mais" onclick="adicionarPonto2()">+</button>
-        <button class="botao" id="equipe2Menos" onclick="removerPonto2()">-</button>
-        <div class="contador" id="pontosEquipe2">0</div>
+    <div class="placar">
+        <h2>Placar de vencedores</h2> <br>
+        <div id="Equipe1"></div> <br>
+        <div id="Equipe2"></div>
     </div>
-
-    <div class="container">
-        <button class="botao" id="truco" onclick="usarTruco()">TRUCO!!!</button>
-    </div>
-    <script src="trabalho.js"></script>
 </body>
 </html>
