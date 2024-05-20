@@ -3,60 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculadora_IR</title>
+    <title>Calculadora de IR 2024</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js" ></script>
+    <script src="script.js"></script>
 </head>
 <body>
-
     <header>
-        <h1>Calculadora de IR 2024</h1>
+        <h1>Calculadora de IR 2024 🦁</h1>
     </header>
-    <div class="main-container">
-        <div class="container01">
-            <div class="caixa">
-                <input type="text" name="text01" id="text01">
-                <input type="button" value="+">
-                <input type="button" value="-">
-                    <div class="caixa2">
-                        <input type="text" name="text01" id="text01">
-                        <input type="button" value="+">
-                        <input type="button" value="-"></div>
-                    </div>
-            <div class="caixa">
-                <input type="text" name="text01" id="text01">
-                <input type="button" value="+">
-                <input type="button" value="-">
-            </div>
-            <div class="caixa">
-                <input type="text" name="text01" id="text01">
-                <input type="button" value="+">
-                <input type="button" value="-">
-            </div>
-            <div class="container01">
-                <div class="caixa">
-                    <input type="text" name="text01" id="text01">
-                    <input type="button" value="+">
-                    <input type="button" value="-">
-                        <div class="caixa2">
-                            <input type="text" name="text01" id="text01">
-                            <input type="button" value="+">
-                            <input type="button" value="-"></div>
-                        </div>
-                <div class="caixa">
-                    <input type="text" name="text01" id="text01">
-                    <input type="button" value="+">
-                    <input type="button" value="-">
-                </div>
-                <div class="caixa">
-                    <input type="text" name="text01" id="text01">
-                    <input type="button" value="+">
-                    <input type="button" value="-">
-                </div> 
-            
-    
+    <div class="container">
+        <div class="input-box">
+            <label for="rendimentoAnual">Rendimento Anual:</label>
+            <input type="text" id="rendimentoAnual" name="rendimentoAnual" placeholder="Ex: R$10000" oninput="validateInput(this)"  onkeydown="mudarfoco(event, 'deducoes')">
         </div>
+        <div class="input-box">
+            <label for="deducoes">Deduções:</label>
+            <input type="text" id="deducoes" name="deducoes" >
+        </div>
+        <div class="input-box">
+            <label for="outrosRendimentos">Outros Rendimentos:</label>
+            <input type="text" id="outrosRendimentos" name="outrosRendimentos">
+        </div>
+        <div class="input-box">
+            <label for="dependentes">Dependentes:</label>
+            <input type="text" id="dependentes" name="dependentes">
+        </div>
+        <div class="button-box">
+            <button type="button" onclick="calcularIR()">Calcular</button>
+        </div>
+        <div id="resultado" class="result-box"></div>
     </div>
-    
+    <script src="script.js"></script>
 </body>
 </html>
