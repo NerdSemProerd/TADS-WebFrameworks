@@ -13,21 +13,22 @@
     </header>
     <div class="container">
         <div class="input-box">
-            <label for="rendimentoAnual">Rendimento Anual:</label>
-            <input type="text" id="rendimentoAnual" name="rendimentoAnual" placeholder="Ex: R$10000" oninput="validateInput(this)"  onkeydown="mudarfoco(event, 'deducoes')">
-        </div>
-        <div class="input-box">
-            <label for="deducoes">Deduções:</label>
-            <input type="text" id="deducoes" name="deducoes" >
+            <label for="RendaBruta">Renda mensal bruta:</label>
+            <input type="text" id="RendaBruta" name="RendaBruta" placeholder="Ex: R$2500" oninput="onlynumers(this)"  onkeydown="mudarfoco(event, 'outrosRendimentos')">
         </div>
         <div class="input-box">
             <label for="outrosRendimentos">Outros Rendimentos:</label>
-            <input type="text" id="outrosRendimentos" name="outrosRendimentos">
+            <input type="text" id="outrosRendimentos" name="outrosRendimentos" placeholder="Ex: R$150" oninput="onlynumers(this)"  onkeydown="mudarfoco(event, 'dependentes')">
         </div>
         <div class="input-box">
             <label for="dependentes">Dependentes:</label>
-            <input type="text" id="dependentes" name="dependentes">
+            <input type="text" id="dependentes" name="dependentes" placeholder="Ex: 3 " oninput="onlynumers(this)" onkeydown="mudarfoco(event, 'deducoes')">
         </div>
+        <div class="input-box">
+            <label for="deducoes">Deduções:</label>
+            <input type="text" id="deducoes" name="deducoes" placeholder="Ex: R$300" oninput="onlynumers(this)">
+        </div>
+
         <div class="button-box">
             <button type="button" onclick="calcularIR()">Calcular</button>
         </div>
