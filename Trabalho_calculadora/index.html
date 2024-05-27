@@ -13,24 +13,20 @@
     </header>
     <div class="container">
         <div class="input-box">
-            <label for="RendaBruta">Renda mensal bruta:</label>
-            <input type="text" id="RendaBruta" name="RendaBruta" placeholder="Ex: R$2500" oninput="onlynumers(this)"  onkeydown="mudarfoco(event, 'outrosRendimentos')">
+            <label for="salarioBruto">Salario bruto mensal:</label>
+            <input type="number" id="salarioBruto" name="salarioBruto" placeholder="Ex: R$2500"  onkeydown="mudarfoco(event, 'outrosRendimentos')">
         </div>
         <div class="input-box">
             <label for="outrosRendimentos">Outros Rendimentos:</label>
-            <input type="text" id="outrosRendimentos" name="outrosRendimentos" placeholder="Ex: R$150" oninput="onlynumers(this)"  onkeydown="mudarfoco(event, 'dependentes')">
+            <input type="number" id="outrosRendimentos" name="outrosRendimentos" placeholder="Ex: R$150"  onkeydown="mudarfoco(event, 'dependentes')">
         </div>
         <div class="input-box">
             <label for="dependentes">Dependentes:</label>
-            <input type="text" id="dependentes" name="dependentes" placeholder="Ex: 3 " oninput="onlynumers(this)" onkeydown="mudarfoco(event, 'deducoes')">
-        </div>
-        <div class="input-box">
-            <label for="deducoes">Deduções:</label>
-            <input type="text" id="deducoes" name="deducoes" placeholder="Ex: R$300" oninput="onlynumers(this)">
+            <input type="number" id="dependentes" name="dependentes" placeholder="Ex: 3 " onkeydown="mudarfoco(event, 'botaocalcular')" >
         </div>
 
         <div class="button-box">
-            <button type="button" onclick="calcularIR()">Calcular</button>
+            <button id="botaocalcular" type="button" onclick="calcularIR()">Calcular</button>
         </div>
         <div id="resultado" class="result-box"></div>
     </div>
