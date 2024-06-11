@@ -12,7 +12,7 @@ body {
 
 header {
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 150px;
 }
 
 .container {
@@ -55,7 +55,7 @@ header {
 }
 
 .button-box button:hover {
-    background-color: #0056b3;
+    background-color: yellow;
 }
 
 .result-box {
